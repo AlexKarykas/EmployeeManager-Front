@@ -1,0 +1,42 @@
+<h3 class="text-center">Departments</h3>
+<div class="action-bar pb-2">
+  <button type="button"
+          class="btn btn-success btn-sm"
+          ng-click="$ctrl.onCreate()">Create</button>
+  <button type="button"
+          class="btn btn-warning btn-sm"
+          ng-click="$ctrl.onEdit({ id: $ctrl.selectedId })">Edit</button>
+  <button type="button"
+          class="btn btn-danger btn-sm"
+          ng-click="$ctrl.onDelete($ctrl.selectedId)">Delete</button>
+</div>
+<!-- <actions></actions> -->
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Created By</th>
+        <th>Date Created</th>
+        <th>Updated By</th>
+        <th>Date Updated</th>
+        <th>Last Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="department in $ctrl.departmentsArray"
+          ng-click="$ctrl.selectedId = departmentId"
+          ng-dbclick="$ctrl.select(department)"
+          ng-class="{ info: department.Id===$ctrl.selectedId}">
+        <td>{{ department.Id }}</td>
+        <td>{{ department.Name }}</td>
+        <td>{{ department.CreatedBy }}</td>
+        <td>{{ department.DateTimeCreated }}</td>
+        <td>{{ department.UpdatedBy }}</td>
+        <td>{{ department.DateTimeUpdated }}</td>
+        <td>{{ department.LastTimeUpdated }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "angularjs-empty-project",
+  "version": "1.0.0",
+  "description": "AngularJS Empty project with ui-router and Angular Bootstrap",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kindratsm/angularjs-empty-project.git"
+  },
+  "author": "Stanislav Kindrat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kindratsm/angularjs-empty-project/issues"
+  },
+  "homepage": "https://github.com/kindratsm/angularjs-empty-project#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.22",
+    "angular": "^1.7.8",
+    "bootstrap": "3.3.7",
+    "jquery": "^3.4.1",
+    "angular-ui-bootstrap": "2.5.6"
+  }
+}

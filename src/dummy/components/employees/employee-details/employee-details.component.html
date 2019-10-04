@@ -1,0 +1,39 @@
+<h3 class="text-center">Employee Details</h3>
+<ng-form name="employee">
+  <!--   First Name Input   -->
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text"
+           class="form-control input-sm"
+           id="firstName"
+           name="firstName"
+           required
+           placeholder="First Name"
+           ng-model="$ctrl.employee.name">
+  </div>
+  <!--   Last Name Input   -->
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text"
+           class="form-control input-sm"
+           id="lastName"
+           name="lastName"
+           required
+           placeholder="Last Name"
+           ng-model="$ctrl.employee.lastName">
+  </div>
+  <div class="form-group">
+    <!--   Date of Birth Input   -->
+    <label for="DateOfBirth">Date of Birth</label>
+    <input type="date"
+           class="form-control"
+           id="dateOfBirth"
+           name="dateOfBirth"
+           ng-model="$ctrl.employee.dateOfBirth">
+  </div>
+  <actions entity-id="$ctrl.employee.Id"
+           on-create="$ctrl.onCreate(event)"
+           on-update="$ctrl.onUpdate(event)"
+           on-cancel="$ctrl.onCancel(event)">
+  </actions>
+</ng-form>

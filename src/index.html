@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"
+      ng-app="pfTest"
+      ng-strict-di>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Profile Test</title>
+  <meta name="veiwport"
+        content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+        href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+        type="text/css"
+        href="content/app.css" />
+</head>
+
+<body>
+  <app></app>
+
+  <!-- dependencies -->
+  <script type="text/javascript"
+          src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="../node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript"
+          src="../node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript"
+          src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+  <!-- pfTest.core -->
+  <script type="text/javascript"
+          src="core/core.module.js"></script>
+  <script type="text/javascript"
+          src="core/core.config.js"></script>
+  <script type="text/javascript"
+          src="core/core.constant.js"></script>
+  <script type="text/javascript"
+          src="core/services/common.service.js"></script>
+  <script type="text/javascript"
+          src="core/services/logger.service.js"></script>
+  <script type="text/javascript"
+          src="core/services/request.service.js"></script>
+
+  <!-- pfTest.widgets -->
+  <script type="text/javascript"
+          src="widgets/widgets.module.js"></script>
+  <script type="text/javascript"
+          src="widgets/services/menu.service.js"></script>
+  <script type="text/javascript"
+          src="widgets/services/modal.service.js"></script>
+  <script type="text/javascript"
+          src="widgets/components/menu/menu.component.js"></script>
+  <script type="text/javascript"
+          src="widgets/components/menu-item/menu-item.component.js"></script>
+
+  <!-- pfTest.dummy -->
+  <script type="text/javascript"
+          src="dummy/dummy.module.js"></script>
+  <script type="text/javascript"
+          src="dummy/dummy.routes.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/home/home.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/test/test.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/test-modal/test-modal.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/departments/departments-list/departments-list.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/departments/department-details/department-details.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/employees/employees-list/employees-list.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/employees/employee-details/employee-details.component.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/employees/services/employees.service.js"></script>
+  <script type="text/javascript"
+          src="dummy/components/departments/services/departments.service.js"></script>
+  <script type="text/javascript"
+          src="widgets/actions/actions.component.js"></script>
+
+
+
+  <!-- pfTest -->
+  <script type="text/javascript"
+          src="app.module.js"></script>
+  <script type="text/javascript"
+          src="app.component.js"></script>
+</body>
+
+</html>

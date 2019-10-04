@@ -1,0 +1,19 @@
+<h3 class="text-center">Department Details</h3>
+<ng-form name='department'>
+  <div class="form-group">
+    <!-- Department Name Input Field-->
+    <label for="name">Name</label>
+    <input type="text"
+           class="form-control input-sm"
+           id="name"
+           name="name"
+           placeholder="Name"
+           required
+           ng-model="$ctrl.department.name">
+  </div>
+  <actions entity-id="$ctrl.department.Id"
+           on-create="$ctrl.onCreate(event)"
+           on-update="$ctrl.onUpdate(event)"
+           on-cancel="$ctrl.onCancel(event)">
+  </actions>
+</ng-form>

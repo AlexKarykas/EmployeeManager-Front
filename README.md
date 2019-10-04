@@ -1,10 +1,8 @@
-# angularjs-empty-project
-AngularJS Empty project with ui-router and Angular Bootstrap
+
+AngularJS project with ui-router and Angular Bootstrap
+Runs together with EmployeeManagerAPI for management employees and departments relations with CRUD Functionality
 
 ### Prepare project
 ```
 npm install --save-dev
 ```
-
-### Start HTTP server
-Use `VS Code` plugin [Live Server](https://github.com/ritwickdey/vscode-live-server) to start development server with live reload feature
